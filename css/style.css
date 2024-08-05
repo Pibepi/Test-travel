@@ -1,5 +1,4 @@
 /* Header */
-
 body {
     font-family: 'Cinzel', cursive;
     margin: 0;
@@ -316,7 +315,6 @@ nav li a:hover {
 }
 
 /* main */
-
 /* Основні стилі для body */
 body {
     font-family: 'Cinzel', cursive;
@@ -690,8 +688,6 @@ hr {
 }
 
 /* footer */
-
-/* Загальні стилі для футера */
 footer {
     background: #000e1c25 !important;
     color: rgb(2, 0, 12);
@@ -756,14 +752,14 @@ select:focus {
     box-shadow: 0 1px 0 0 #FFD700 !important;
 }
 
-.dropdown-content li > span {
+.dropdown-content li>span {
     color: rgb(0, 0, 0);
 }
 
-.dropdown-content li > span:active,
-.dropdown-content li > span:hover,
-.dropdown-content li > span:focus,
-.dropdown-content li > span.active {
+.dropdown-content li>span:active,
+.dropdown-content li>span:hover,
+.dropdown-content li>span:focus,
+.dropdown-content li>span.active {
     color: rgb(255, 187, 0);
 }
 
@@ -853,7 +849,6 @@ select:focus {
     color: yellow;
 }
 
-/* Адаптивність (mobile-first approach) */
 @media (max-width: 768px) {
     .footer-info {
         display: grid;
@@ -873,7 +868,6 @@ select:focus {
     }
 }
 
-/* Загальні стилі для <hr> */
 hr {
     border: none;
     height: 2px;
@@ -881,13 +875,11 @@ hr {
     margin: 20px 0;
 }
 
-/* Стилі для <hr> у футері */
 footer hr {
     background-color: #ffffff;
     opacity: 0.5;
 }
 
-/* Стилі для <hr> з градієнтом */
 hr.gradient {
     height: 3px;
     background: linear-gradient(to right, #FFD700, #ffcc00);
@@ -895,14 +887,12 @@ hr.gradient {
     margin: 20px 0;
 }
 
-/* Стилі для <hr> з пунктирною лінією */
 hr.dashed {
     border-top: 2px dashed #FFD700;
     background: transparent;
     margin: 20px 0;
 }
 
-/* Переопределення стилів Materialize CSS */
 .btn,
 .btn:hover,
 .btn:focus {
@@ -959,4 +949,73 @@ select:focus {
 
 .iconsFooter {
     padding: 10px;
+}
+
+/* Додаткові стилі для забезпечення правильної роботи каруселі на мобільних пристроях */
+
+
+.carousel-item {
+    height: 400px;
+    background-size: cover;
+}
+
+.hero {
+    padding: 60px 20px;
+    background: rgba(0, 145, 248, 0.2);
+}
+
+.hero h1 {
+    font-size: 30px;
+    color: white;
+    margin: 0 0 20px;
+}
+
+.hero a {
+    color: black;
+}
+
+
+
+
+/* Основний стиль для кнопок */
+.swiper-button-prev,
+.swiper-button-next {
+    top: auto;
+    bottom: -260px;
+    color: #cfcbcb;
+    width: 15px;
+}
+
+/* Адаптивність для планшетів (ширина від 768px до 1024px) */
+@media (max-width: 1024px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        bottom: -200px;
+        width: 20px;
+    }
+}
+
+/* Адаптивність для мобільних пристроїв (ширина до 767px) */
+@media (max-width: 767px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        bottom: auto;
+        width: 25px;
+    }
+    
+    .swiper-container {
+        width: 100%;
+        overflow: hidden; /* Додаємо overflow: hidden */
+    }
+    
+    .swiper-slide {
+        width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .tour-card {
+        padding: 10px;
+        box-sizing: border-box;
+    }
 }

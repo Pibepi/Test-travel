@@ -1,18 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Ініціалізація Swiper
     var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 1,
+        spaceBetween: 10,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        loop: false,
+        loop: true,
         breakpoints: {
-            0: {
-                slidesPerView: 1,
-                spaceBetween: 10
-            },
             768: {
                 slidesPerView: 2,
                 spaceBetween: 10
@@ -30,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Ініціалізація каруселі
     var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init(elems, {
-        fullWidth: false,
+        fullWidth: true,
         indicators: true
     });
 
