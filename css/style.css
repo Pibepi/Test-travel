@@ -80,7 +80,7 @@ header {
 }
 
 .navIn {
-    width: 660px;
+    width: 680px;
     height: 40px;
     border-radius: 15px;
 }
@@ -1019,3 +1019,20 @@ select:focus {
         box-sizing: border-box;
     }
 }
+
+.language-button {
+    display: inline-block;
+    padding: 0px 0px;
+    font-size: 16px;
+    color: #fff;
+  
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .language-button:hover {
+    background-color: #0056b3;
+  }
+  
