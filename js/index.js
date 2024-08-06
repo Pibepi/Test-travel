@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Ініціалізація усіх компонентів Materialize
-    M.AutoInit();
+
 
     // Ініціалізація каруселі
     var elems = document.querySelectorAll('.carousel');
@@ -37,4 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
             this.classList.add('active');
         });
     });
+
 });
+M.AutoInit();
